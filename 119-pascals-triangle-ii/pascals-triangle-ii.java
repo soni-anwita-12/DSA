@@ -14,7 +14,7 @@ class Solution {
                 if(j==0 || j==i){
                     ans.get(i).set(j,1);
                 }else{
-                    int val = ans.get(i-1).get(j-1)+ans.get(i-1).get(j);
+                    int val = ans.get(i-1).get(j)+ans.get(i-1).get(j-1);
                     ans.get(i).set(j,val);
                 }
             }
